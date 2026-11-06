@@ -1,0 +1,5 @@
+# ये फाइलें GitHub पर नहीं जाएंगी (हमारे लोकल चीज़ें)
+node_modules/
+dist/
+*.log
+.DS_Store

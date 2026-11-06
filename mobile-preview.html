@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<title>PrakritiGlow — दोनों नज़ारे</title>
+<style>
+  body { margin: 0; background: #14142b; padding: 24px; font-family: sans-serif; }
+  h2 { color: #e9c855; font-size: 15px; margin: 18px 0 10px; }
+  .frame-wrap { overflow: hidden; border-radius: 18px; box-shadow: 0 16px 40px rgba(0,0,0,.5); }
+  /* मोबाइल फ्रेम: 390px असली साइज़, 66% झूम-आउट */
+  .phone { width: 390px; height: 844px; transform: scale(0.66); transform-origin: top left; }
+  .phone-wrap { width: calc(390px * 0.66); height: calc(844px * 0.66); border-radius: 22px; border: 6px solid #000; overflow: hidden; }
+  .phone { border: 0; }
+  /* लैपटॉप फ्रेम: 1280px असली साइज़, 66% झूम-आउट */
+  .desk { width: 1280px; height: 900px; transform: scale(0.64); transform-origin: top left; border: 0; }
+  .desk-wrap { width: calc(1280px * 0.64); height: calc(900px * 0.64); border-radius: 12px; border: 2px solid #444; overflow: hidden; }
+  iframe { display: block; }
+</style>
+</head>
+<body>
+  <h2>📱 मोबाइल — असली 390px चौड़ाई</h2>
+  <div class="phone-wrap"><iframe class="phone" src="http://localhost:5173/"></iframe></div>
+
+  <h2>💻 लैपटॉप — असली 1280px चौड़ाई</h2>
+  <div class="desk-wrap"><iframe class="desk" src="http://localhost:5173/"></iframe></div>
+</body>
+</html>
